@@ -1,1 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FarmGuard - Crop Disease Detector</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>🌾 FarmGuard</h1>
+    <p>AI-Powered Crop Disease Detection and Advisory</p>
+  </header>
 
+  <main>
+    <section class="upload-section">
+      <h2>Upload or Capture a Leaf Image</h2>
+      <input type="file" accept="image/*" capture="environment" />
+      <button>Detect Disease</button>
+    </section>
+
+    <section class="result-section">
+      <h2>Disease Result</h2>
+      <p><strong>Disease:</strong> <span id="disease-name">--</span></p>
+      <p><strong>Confidence:</strong> <span id="confidence-score">--%</span></p>
+    </section>
+
+    <section class="treatment-section">
+      <h2>Recommended Treatment</h2>
+      <ul id="treatment-list">
+        <li>--</li>
+      </ul>
+    </section>
+
+    <section class="alerts-section">
+      <h2>Crop-Specific Alerts & Weather</h2>
+      <div id="alerts">
+        <p>--</p>
+      </div>
+    </section>
+
+    <section class="map-section">
+      <h2>Nearby Agro-Shops</h2>
+      <div id="map">[Google Map Placeholder]</div>
+    </section>
+
+    <section class="notifications">
+      <h2>Live Notifications</h2>
+      <ul id="notifications-list">
+        <li>No current alerts.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 FarmGuard</p>
+  </footer>
+</body>
+</html>
